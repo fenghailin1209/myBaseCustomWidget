@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/zjf_ll"
+                android:layout_width="0dip"
+                android:layout_height="58dip"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip" >
+
+                <ImageView
+                    android:id="@+id/lv_ic_iv"
+                    android:scaleType="centerCrop"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip" />
+
+                <TextView
+                    android:id="@+id/lv_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="礼物名称  X 2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="58dip"
+                android:layout_weight="2"
+                android:gravity="right|center_vertical">
+
+                <TextView
+                    android:id="@+id/lv_zsznc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="赠送者昵称" />
+
+                <TextView
+                    android:id="@+id/lv_zszn_time_tv"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical"
+                    android:text="2015-05-12" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+</LinearLayout>

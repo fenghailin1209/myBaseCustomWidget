@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mybasecustomwidget"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        tools:overrideLibrary="com.github.jdsjlzx,
+        com.zhy.baseadapter_recyclerview,
+        com.andview.refreshview,
+        "
+        android:minSdkVersion="15"
+        android:targetSdkVersion="16" />
+        />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+    <application
+        android:allowBackup="true"
+         android:name="com.example.mybasecustomwidget.MyCustomApplication"
+        android:icon="@drawable/ic_my_custom_view_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:replace="android:name"
+        >
+        
+        <meta-data 
+            android:name="com.amap.api.v2.apikey"
+            android:value="03a83932495f38534b315c0eaaf81c73" />
+        
+        
+<!--             android:name="com.example.mybasecustomwidget.MainActivity" -->
+        <activity
+            android:name="com.example.mybasecustomwidget.gesture.GestureActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- http://blog.csdn.net/qduningning/article/details/37602101 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="panda"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mybasecustomwidget.TestActivity1">
+        </activity>
+        <activity
+            android:name="com.example.mybasecustomwidget.TestActivity2">
+        </activity>
+        <activity
+            android:name="com.example.mybasecustomwidget.baseAdapterHelper.multipleSupport.SimpleTestActivity">
+        </activity>
+        <activity
+            android:name="com.example.mybasecustomwidget.baseAdapterHelper.multipleSupport.ChatActivity">
+        </activity>
+        <activity
+            android:name="com.example.mybasecustomwidget.afinal.FinalImageLoadingActivity">
+        </activity>
+
+        <activity android:name="com.example.mybasecustomwidget.antoviewpager.AutoViewPagerActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.barrage.BarrageActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.baseadpter.MyCustomBaseAdapterActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.buttom_move.ButtonMoveActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.canvas.MyCustomCanvasActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.canvas.bsrqx.waterview.WaveViewActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.flow.FlowActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.gifview.GifViewActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.guidemap.GuideMapViewActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.listview.gridview.MyCustomListViewAndGridViewActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.measure.ViewMeasureDemoActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.poly.PolyLineViewActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.raindrops.RaindropsActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.spannablestringsuilder.SpannableStringBuilderDemoActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.invite_friend.InviteFriendActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            />
+        <activity android:name="com.example.mybasecustomwidget.invite_friend.FriendsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name="com.example.mybasecustomwidget.simple_cache.SimpleCacheActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name="com.example.mybasecustomwidget.AppBarLayout.NestedScrollView.ListView.NestedScrollViewListViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            />
+        <activity android:name="com.example.mybasecustomwidget.js.java.JsCallJavaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name=".js.web_call_local_photo.WebviewCallLocalPhotoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name="com.example.mybasecustomwidget.system_dialog.MyCustomSystemDialogActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name="com.example.mybasecustomwidget.coordinatorlayout.CoordinatorLayoutActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.coordinatorlayout.CoordinatorLayoutListActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.webview.html.WebViewHtmlActivity"/>
+        <!--<activity android:name="com.example.mybasecustomwidget.gesture.GestureActivity"/>-->
+        <activity android:name="com.example.mybasecustomwidget.AppBarLayout.AppBarLayoutDemoActivity"/>
+        <activity android:name="com.example.mybasecustomwidget.webview.html.ReplyAgainReplyActivity" />
+        <activity android:name="com.example.mybasecustomwidget.webview.html.NewsPagerActivity"/>
+
+    </application>
+
+</manifest>

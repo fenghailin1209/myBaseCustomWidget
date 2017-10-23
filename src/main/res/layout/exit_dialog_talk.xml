@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <!-- android:id="@+id/exit_layout" -->
+
+    <TextView
+        android:id="@+id/txt0"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:text="提示"
+        android:textColor="#91DA7A"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#91DA7A"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <TextView
+        android:id="@+id/txtinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dip"
+        android:paddingTop="15dp"
+        android:text="你确定退出设施管理系统？"
+        android:textColor="#000"
+        android:textSize="16.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ccc" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="4"
+                android:background="@drawable/button_selector4"
+                android:text="取消"
+                android:textColor="#000"
+                android:textSize="16.0dip" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="50dip"
+                android:background="#ccc" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="4"
+                android:background="@drawable/button_selector4"
+                android:text="确定"
+                android:textColor="#000"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

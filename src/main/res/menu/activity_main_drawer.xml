@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/Afinal"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Afinal" />
+        <item
+            android:id="@+id/AutoViewPager"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="AutoViewPager" />
+        <item
+            android:id="@+id/Barrage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Barrage" />
+        <item
+            android:id="@+id/multiPleSupport"
+            android:icon="@drawable/ic_menu_share"
+            android:title="multiPleSupport" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/BaseAdapter"
+                android:icon="@drawable/ic_menu_send"
+                android:title="BaseAdapter" />
+            <item
+                android:id="@+id/ButtonMove"
+                android:icon="@drawable/ic_menu_send"
+                android:title="ButtonMove" />
+            <item
+                android:id="@+id/Canvas"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Canvas" />
+            <item
+                android:id="@+id/WaterView"
+                android:icon="@drawable/ic_menu_send"
+                android:title="WaterView" />
+            <item
+                android:id="@+id/FlowView"
+                android:icon="@drawable/ic_menu_send"
+                android:title="FlowView" />
+            <item
+                android:id="@+id/GiveView"
+                android:icon="@drawable/ic_menu_send"
+                android:title="GiveView" />
+            <item
+                android:id="@+id/GuideMapView"
+                android:icon="@drawable/ic_menu_send"
+                android:title="GuideMapView" />
+            <item
+                android:id="@+id/ListViwe_GridView"
+                android:icon="@drawable/ic_menu_send"
+                android:title="ListViwe_GridView" />
+            <item
+                android:id="@+id/Measure"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Measure" />
+            <item
+                android:id="@+id/Poly"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Poly" />
+            <item
+                android:id="@+id/RainDrops"
+                android:icon="@drawable/ic_menu_send"
+                android:title="RainDrops" />
+            <item
+                android:id="@+id/SpanableStringBuilder"
+                android:icon="@drawable/ic_menu_send"
+                android:title="SpanableStringBuilder" />
+            <item
+                android:id="@+id/CoordinatorLayoutActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="CoordinatorLayout最基本的用法" />
+            <item
+                android:id="@+id/CoordinatorLayoutActivity2"
+                android:icon="@drawable/ic_menu_send"
+                android:title="CoordinatorLayout最基本的用法2" />
+            <item
+                android:id="@+id/AppBarLayoutDemoActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="支付宝头部切换" />
+            <item
+                android:id="@+id/NestedScrollViewListView"
+                android:icon="@drawable/ic_menu_send"
+                android:title="NestedScrollView嵌套ListView" />
+            <item
+                android:id="@+id/InviteFriendActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="qq的@功能" />
+            <item
+                android:id="@+id/SimpleCacheActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="ACache" />
+            <item
+                android:id="@+id/JsCallJavaActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="JsCallJavaActivity" />
+            <item
+                android:id="@+id/JsBugActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="WebView调用本地相机" />
+            <item
+                android:id="@+id/MyCustomSystemDialogActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="自定义系统dialog" />
+            <item
+                android:id="@+id/WebViewHtmlFragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="webview加载拼接html" />
+            <item
+                android:id="@+id/WebViewHtmlFragment2"
+                android:icon="@drawable/ic_menu_send"
+                android:title="webview加载拼接html模式2" />
+            <item
+                android:id="@+id/GestureActivity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="手势滑动" />
+        </menu>
+    </item>
+
+</menu>

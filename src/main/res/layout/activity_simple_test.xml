@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/head_arrowImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_share_weixin" />
+
+    <com.tandong.sa.view.AutoReFreshListView
+        android:id="@+id/id_lv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:visibility="visible"/>
+
+</LinearLayout>

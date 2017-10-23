@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_reply_again_reply_nick_tv"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="成都市武侯区天府新谷"
+                    android:textColor="#B2B2B2" />
+
+                <TextView
+                    android:id="@+id/id_reply_again_reply_praise_tv"
+                    android:paddingRight="5dip"
+                    android:paddingLeft="5dip"
+                    android:text="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#525252" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_reply_again_reply_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_describe"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="2dip"
+                android:text="改我和高hi诶给hi受贿罪被查|印度一居民楼坍塌属改我和高hi诶给hi受贿罪被查改我和高hi诶给hi受贿罪被查改我和高hi诶给hi受贿罪被查"
+                android:textColor="#525252"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/id_reply_again_reply_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#ECECEC" />
+</LinearLayout>

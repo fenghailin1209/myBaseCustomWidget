@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/id_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="张三"
+        android:textSize="16sp"
+        android:textColor="#444444" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/id_friend_uid_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1001"
+        android:textColor="#898989"
+        android:textSize="12sp" >
+    </TextView>
+
+
+</LinearLayout>

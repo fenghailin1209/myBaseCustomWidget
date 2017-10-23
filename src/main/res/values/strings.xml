@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyBaseCustomWidget</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="test_text">速度，采用了Scroller弹性滑动对象。为什么组件继承FrameLayout，是因为用[http://www.xmxing.net/,熊猫驾信官网]于指示的小圆点是出现.</string>
+	
+    <string name="show">show</string>
+    <string name="hide">hide</string>
+    <string name="send">send</string>
+    <string name="text_hint">input text here</string>
+    <string name="empty_prompt">please input text</string>
+    <string name="title_activity_channel_list">ChannelListActivity</string>
+    <string name="title_activity_new_pic">NewPicActivity</string>
+
+    <item name="tag_second" type="id"></item>
+	<string name="app_network_error">网络异常，在"设置"中切换其他网络试试!</string>
+	<string name="app_load_data_fail">网路异常，加载数据失败!</string>
+	<string name="app_info_submit_fail">网路异常，信息提交失败!</string>
+	
+    <string name="click_refresh">点击刷新</string>
+    <string name="video_close">试运行期间，本视频仅提供20秒实时播放</string>
+    <string name="title_activity_traffic_induced_map">TrafficInducedMapActivity</string>
+    <string name="web_loading_string">读取中…</string>
+    <string name="web_load_failure_string">哎呀，又没网了，不嗨森！</string>
+    <string name="web_refresh_string">刷新看看</string>
+    <!-- 导航 start -->
+    <string name="start_title">示例代码</string>
+    <string name="app_id">54ace14a</string>
+    <string name="base_function">基本功能</string>
+    <string name="hud_title">HUD显示</string>
+    <string name="navibar_title">路径规划</string>
+    <string name="navi_car">驾车</string>
+    <string name="navi_foot">步行</string>
+    <string name="start_hud_navi">HUD显示</string>
+    <string name="complex_function">综合展示</string>
+    <string name="navi_empty_car">"驾   车"</string>
+    <string name="navi_empty_foot">"步   行"</string>
+    <string name="navi_start">"起    点"</string>
+    <string name="navi_middle">途经点</string>
+    <string name="navi_end">"终    点"</string>
+    <string name="navi_strategy">"策    略"</string>
+    <string name="navi_route">路径规划</string>
+    <string name="navi_navi">模拟导航</string>
+    <string name="start_navi_navi">实时导航</string>
+    <string name="navi_strategy_speed">速度最快</string>
+    <string name="navi_strategy_cost">避免收费</string>
+    <string name="navi_strategy_distance">距离最短</string>
+    <string name="navi_strategy_nohighway">不走高速快速路</string>
+    <string name="navi_strategy_timenojam">时间最短且躲避拥堵</string>
+    <string name="navi_strategy_costnojam">避免收费且躲避拥堵</string>
+    <string name="theme_blue">经典蓝</string>
+    <string name="theme_pink">可爱粉</string>
+    <string name="theme_white">简约白</string>
+    <string name="setting">设置</string>
+    <string name="day">白天</string>
+    <string name="night">夜间</string>
+    <string name="yes">"  是  "</string>
+    <string name="no">"  否  "</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="daynightmode">"昼夜模式    "</string>
+    <string name="deviationrecalculation">"偏航重算    "</string>
+    <string name="jamrecalculation">"拥堵重算    "</string>
+    <string name="trafficbroadcast">"交通播报    "</string>
+    <string name="camerabroadcast">摄像头播报</string>
+    <string name="screenon">"屏幕常亮    "</string>
+    <string name="routeshow">线路展示</string>
+    <string name="tapmap">点击地图设置</string>
+    <string name="starttapmap">我的位置（可点击地图设置）</string>
+    <string name="walkdescription">步行状态不可用</string>
+    <string name="routeinfo">全程   --公里/--分钟    收费 --元</string>
+    <string name="routeinfo_1">全程 </string>
+    <string name="routeinfo_2">公里/</string>
+    <string name="routeinfo_3">"分钟    收费"</string>
+    <string name="routeinfo_4">元</string>
+    <string name="routeinfo_default">--</string>
+    <!-- <string name="app_id">输入您讯飞的appid</string> -->
+    <string name="mypoistion">我的位置</string>
+    <string name="mappoistion">地图点选</string>
+    <string name="positioninfo">位置信息</string>
+    <string name="sharetitle">熊猫驾信</string>
+    <string name="sharecontent">使用我的驾信云驾号:</string>
+   <string name="sharecontent1">,注册熊猫驾信将额外获得100积分。熊猫驾信APP提供免费的车辆违法处理、缴费服务和专业的行车互聊平台。你也快来试试吧！下载地址：http://www.xmxing.net。</string>
+    <string-array name="preference_values_tts_role">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>vixq</item>
+        <item>vixf</item>
+        <item>vixm</item>
+        <item>vixl</item>
+        <item>vixr</item>
+        <item>vixyun</item>
+        <item>vixk</item>
+        <item>vixqa</item>
+        <item>vixying</item>
+        <item>vixx</item>
+        <item>vinn</item>
+        <item>vils</item>
+    </string-array>
+
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+    <!-- 导航 end -->
+
+    <string name="title_activity_my_dialog">MyDialog</string>
+    <string name="title_activity_news_web_view">NewsWebViewActivity</string>
+    <string name="title_activity_video_view">VideoViewActivity</string>
+    <string name="title_activity_radio">RadioActivity</string>
+    <string name="title_activity_traffic_control_measures">TrafficControlMeasuresActivity</string>
+
+    <!-- 自定义ListView -->
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <!-- fhl add -->
+    <string name="p2refresh_no_data_load">没有更多数据了</string>
+    <string name="title_activity_talk">TalkActivity</string>
+    <string name="title_activity_talk_content">TalkContentActivity</string>
+    <string name="title_activity_publish_talk">PublishTalkActivity</string>
+    <string name="title_activity_share_to_other">ShareToOtherActivity</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+    
+    
+    <string name="text_update_location_notify">提示</string>
+    <string name="text_update_location_content">驾信将在地图显示您的位置、移动速度等信息，便于实时路况分享、出行求助，可在"设置->隐私设置"中修改。</string>
+    <string name="text_update_location_cancle_text">不同意</string>
+    <string name="text_update_location_ok_text">同意</string>
+    <string name="text_update_location_jz_text">记住选择，下次不再提醒</string>
+
+    
+    <!-- 路况地图TrafficMap -->
+    <string name="trafficmap_report">上报</string>
+    <string name="trafficmap_jam">拥堵</string>
+    <string name="trafficmap_accident">事故</string>
+    <string name="trafficmap_construct">施工</string>
+    <string name="trafficmap_factcamera">路况抢拍</string>
+    <string name="trafficmap_illegal_report">交通违法举报</string>
+
+    <!-- 上报拍照ReportCamera -->
+    <string name="reportcamera_title">上报事件</string>
+    
+    
+    <!-- 离线地图提示 start -->
+    <string name="open_wifi">当前不是WI-FI网络，下载离线地图包将产生流量费用，确认继续下载么？</string>
+    <string name="download_offline">检测到您还未下载离线地图，是否下载？</string>
+    <string name="offline_download_title">下载离线地图减少流量</string>
+    <string name="offline_open_wifi_title">提示</string>
+    <!-- 离线地图提示 end -->
+    <string name="open_camera_fail">无法启动相机，请检查是否有第三方应用在后台运行（如手电筒），请关掉后重试.</string>
+	
+    <!-- 添加车辆温馨提示 -->
+    <string name="add_car_license_prompt">温馨提示：</string>
+    <string name="add_car_license_prompt1">1、绑定车辆的所有人必须与绑定驾驶证为同一人。</string>
+    <string name="add_car_license_prompt2">2、绑定需通过手机验证， 验证码将发送机动车在车管所登记的手机号。</string>
+    <string name="add_car_license_prompt3">3、成都籍机动车可以访问http://www.cdjg.gov.cn 进行联系电话变更，其他城市籍机动车可以下载"四川交警公共服务平台"，选择"掌上车管所 >机动车业务"进行变更。</string>
+    <string name="is_category_fc">我的驾证</string>
+    <string name="is_category_tc">我的车辆</string>
+    <string name="bind_driving_and_car">绑定机动车和驾驶证</string>
+    <string name="delete_car_msg">是否删除车辆信息？</string>
+    <string name="delete_car_prop">删除中……</string>
+    <string name="delete_car_no_cheoose_prop">请选择删除的车辆</string>
+
+    <!-- 绑定车辆 -->
+    <string name="bind_car_licence_number">请输入车牌号码</string>
+    <string name="self_bind_car_number">请输入车架号后6位</string>
+    <string name="title_activity_bind_motor_vehicle">BindMotorVehicleActivity</string>
+    
+    <!-- 获取机动车和驾驶证信息 -->
+    <string name="get_driving_and_car_infos">正在获取机动车和驾驶人信息</string>
+	    <string name="downloading">正在下载\n\t请稍候&#8230;</string>
+    <string name="not_update">暂不更新</string>
+    <string name="re_attempt">重试</string>
+        <string name="update">更新</string>
+
+    <string name="my_txt">
+
+        程序计数器
+
+程序计数器是线程私有的区域，很好理解嘛~，每个线程当然得有个计数器记录当前执行到那个指令。占用的内存空间小，可以把它看成是当前线程所执行的字节码的行号指示器。如果线程在执行Java方法，这个计数器记录的是正在执行的虚拟机字节码指令地址；如果执行的是Native方法，这个计数器的值为空（Undefined）。此内存区域是唯一一个在Java虚拟机规范中没有规定任何OutOfMemoryError情况的区域。
+Java虚拟机栈
+
+与程序计数器一样，Java虚拟机栈也是线程私有的。其生命周期与线程相同。如何理解虚拟机栈呢？本质上来讲，就是个栈。里面存放的元素叫栈帧，栈帧好像很复杂的样子，其实它很简单！它里面存放的是一个函数的上下文，具体存放的是执行的函数的一些数据。执行的函数需要的数据无非就是局部变量表（保存函数内部的变量）、操作数栈（执行引擎计算时需要），方法出口等等。
+
+执行引擎每调用一个函数时，就为这个函数创建一个栈帧，并加入虚拟机栈。换个角度理解，每个函数从调用到执行结束，其实是对应一个栈帧的入栈和出栈。
+
+注意这个区域可能出现的两种异常：一种是StackOverflowError，当前线程请求的栈深度大于虚拟机所允许的深度时，会抛出这个异常。制造这种异常很简单：程序计数器是线程私有的区域，很好理解嘛~，每个线程当然得有个计数器记录当前执行到那个指令。占用的内存空间小，可以把它看成是当前线程所执行的字节码的行号指示器。如果线程在执行Java方法，这个计数器记录的是正在执行的虚拟机字节码指令地址；如果执行的是Native方法，这个计数器的值为空（Undefined）。此内存区域是唯一一个在Java虚拟机规范中没有规定任何OutOfMemoryError情况的区域。
+Java虚拟机栈
+
+与程序计数器一样，Java虚拟机栈也是线程私有的。其生命周期与线程相同。如何理解虚拟机栈呢？本质上来讲，就是个栈。里面存放的元素叫栈帧，栈帧好像很复杂的样子，其实它很简单！它里面存放的是一个函数的上下文，具体存放的是执行的函数的一些数据。执行的函数需要的数据无非就是局部变量表（保存函数内部的变量）、操作数栈（执行引擎计算时需要），方法出口等等。
+
+执行引擎每调用一个函数时，就为这个函数创建一个栈帧，并加入虚拟机栈。换个角度理解，每个函数从调用到执行结束，其实是对应一个栈帧的入栈和出栈。
+
+注意这个区域可能出现的两种异常：一种是StackOverflowError，当前线程请求的栈深度大于虚拟机所允许的深度时，会抛出这个异常。制造这种异常很简单：程序计数器是线程私有的区域，很好理解嘛~，每个线程当然得有个计数器记录当前执行到那个指令。占用的内存空间小，可以把它看成是当前线程所执行的字节码的行号指示器。如果线程在执行Java方法，这个计数器记录的是正在执行的虚拟机字节码指令地址；如果执行的是Native方法，这个计数器的值为空（Undefined）。此内存区域是唯一一个在Java虚拟机规范中没有规定任何OutOfMemoryError情况的区域。
+Java虚拟机栈
+
+与程序计数器一样，Java虚拟机栈也是线程私有的。其生命周期与线程相同。如何理解虚拟机栈呢？本质上来讲，就是个栈。里面存放的元素叫栈帧，栈帧好像很复杂的样子，其实它很简单！它里面存放的是一个函数的上下文，具体存放的是执行的函数的一些数据。执行的函数需要的数据无非就是局部变量表（保存函数内部的变量）、操作数栈（执行引擎计算时需要），方法出口等等。
+
+执行引擎每调用一个函数时，就为这个函数创建一个栈帧，并加入虚拟机栈。换个角度理解，每个函数从调用到执行结束，其实是对应一个栈帧的入栈和出栈。
+
+注意这个区域可能出现的两种异常：一种是StackOverflowError，当前线程请求的栈深度大于虚拟机所允许的深度时，会抛出这个异常。制造这种异常很简单：将一个函数反复递归自己，最终会出现栈溢出错误（StackOverflowError）。另一种异常是OutOfMemoryError异常，当虚拟机栈可以动态扩展时（当前大部分虚拟机都可以），如果无法申请足够多的内存就会抛出OutOfMemoryError，如何制作虚拟机栈OOM呢，参考一下代码：
+
+    </string>
+
+</resources>

@@ -1,0 +1,9 @@
+javascript:(function(){
+    var objs = document.getElementsByTagName("img");
+    var ElePosition=[];
+    for (var i = 0; i < objs.length; i++){
+         ElePosition.push(objs[i].getBoundingClientRect().top);
+    };
+
+     window.imagelocationlistner.imageLocation(ElePosition);
+  })()

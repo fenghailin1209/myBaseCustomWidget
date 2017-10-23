@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fhl="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--  第一组 -->
+    <TextView
+        android:gravity="center"
+        android:text="Child_01"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        fhl:layout_behavior="com.example.mybasecustomwidget.coordinatorlayout.MyBehavir_02"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:text="Child_02"
+        android:background="@android:color/holo_red_dark"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        fhl:layout_behavior="com.example.mybasecustomwidget.coordinatorlayout.MyBehavirVertical"
+        />
+
+    <com.example.mybasecustomwidget.coordinatorlayout.TempView
+        android:gravity="center"
+        android:background="@android:color/holo_orange_light"
+        android:text="Dependency"
+        android:layout_width="100dip"
+        android:layout_height="100dip" />
+
+    <!--  第二组 -->
+    <TextView
+        android:gravity="center"
+        android:text="Child_02"
+        android:background="@android:color/darker_gray"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        fhl:layout_behavior="com.example.mybasecustomwidget.coordinatorlayout.MyBehavir_02"
+        />
+
+    <com.example.mybasecustomwidget.coordinatorlayout.TempView_02
+        android:gravity="center"
+        android:background="@android:color/holo_purple"
+        android:text="Dependency_02"
+        android:layout_width="100dip"
+        android:layout_height="100dip" />
+-->
+</android.support.design.widget.CoordinatorLayout>

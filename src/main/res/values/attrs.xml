@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   <attr name="PaintWidth" format="integer"></attr>
+    <attr name="DashedSpace" format="float"></attr>
+    <attr name="PaintColor" format="color"></attr>
+    <attr name="ArrowsWidth" format="dimension"></attr>
+    
+    <declare-styleable name="GuideMapSetting">
+        <attr name="PaintWidth"></attr>
+        <attr name="DashedSpace"></attr>
+        <attr name="PaintColor"></attr>
+        <attr name="ArrowsWidth"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="GuidancePager">
+        <attr name="ImgeViewWidth" format="dimension" />
+        <attr name="ImgeViewHeight" format="dimension" />
+        <attr name="PointViewWidth" format="dimension" />
+        <attr name="PointViewHeight" format="dimension" />
+        <attr name="PointViewMarginLeft" format="dimension" />
+        <attr name="PointViewMarginTop" format="dimension" />
+        <attr name="PointViewMarginRight" format="dimension" />
+        <attr name="PointViewMarginBottom" format="dimension" />
+    </declare-styleable>
+    
+     <declare-styleable name="DanmakuView">
+        <attr name="max_row" format="integer" />
+        <attr name="pick_interval" format="integer" />
+        <attr name="max_running_per_row" format="integer" />
+        <attr name="show_debug" format="boolean" />
+        <attr name="start_Y_offset" format="float" />
+        <attr name="end_Y_offset" format="float" />
+    </declare-styleable>
+    
+     <!-- 圆形图片 -->
+     <attr name="dborder_width" format="dimension" />
+    <attr name="dborder_color" format="color" />
+    <attr name="dborder_overlay" format="boolean" />
+
+    <declare-styleable name="CircleImageView">
+        <attr name="dborder_width"></attr>
+        <attr name="dborder_color"></attr>
+        <attr name="dborder_overlay"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="flowView">
+        <attr name="flowHeight" format="dimension"></attr>
+        <attr name="flowColor" format="color"></attr>
+        <attr name="arrowsLength" format="dimension"></attr>
+    </declare-styleable>
+    
+</resources>

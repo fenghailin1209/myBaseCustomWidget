@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_mybasecustomwidget" default="compile.module.mybasecustomwidget">
+  <dirname property="module.mybasecustomwidget.basedir" file="${ant.file.module_mybasecustomwidget}"/>
+  
+  <property name="module.jdk.home.mybasecustomwidget" value="${jdk.home.android_api_24_platform}"/>
+  <property name="module.jdk.bin.mybasecustomwidget" value="${jdk.bin.android_api_24_platform}"/>
+  <property name="module.jdk.classpath.mybasecustomwidget" value="jdk.classpath.android_api_24_platform"/>
+  
+  <property name="compiler.args.mybasecustomwidget" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="mybasecustomwidget.output.dir" value="${module.mybasecustomwidget.basedir}/build/intermediates/classes/debug"/>
+  <property name="mybasecustomwidget.testoutput.dir" value="${module.mybasecustomwidget.basedir}/build/intermediates/classes/androidTest/debug"/>
+  
+  <path id="mybasecustomwidget.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="mybasecustomwidget.module.production.classpath">
+    <path refid="${module.jdk.classpath.mybasecustomwidget}"/>
+  </path>
+  
+  <path id="mybasecustomwidget.runtime.production.module.classpath">
+    <pathelement location="${mybasecustomwidget.output.dir}"/>
+  </path>
+  
+  <path id="mybasecustomwidget.module.classpath">
+    <path refid="${module.jdk.classpath.mybasecustomwidget}"/>
+    <pathelement location="${mybasecustomwidget.output.dir}"/>
+  </path>
+  
+  <path id="mybasecustomwidget.runtime.module.classpath">
+    <pathelement location="${mybasecustomwidget.testoutput.dir}"/>
+    <pathelement location="${mybasecustomwidget.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.mybasecustomwidget">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.mybasecustomwidget">
+    <patternset refid="excluded.from.module.mybasecustomwidget"/>
+  </patternset>
+  
+  <path id="mybasecustomwidget.module.sourcepath">
+    <dirset dir="${module.mybasecustomwidget.basedir}">
+      <include name="build/generated/source/r/debug"/>
+      <include name="build/generated/source/aidl/debug"/>
+      <include name="build/generated/source/buildConfig/debug"/>
+      <include name="build/generated/source/rs/debug"/>
+      <include name="build/generated/res/rs/debug"/>
+      <include name="src/main/res"/>
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="mybasecustomwidget.module.test.sourcepath">
+    <dirset dir="${module.mybasecustomwidget.basedir}">
+      <include name="build/generated/source/r/androidTest/debug"/>
+      <include name="build/generated/source/aidl/androidTest/debug"/>
+      <include name="build/generated/source/buildConfig/androidTest/debug"/>
+      <include name="build/generated/source/rs/androidTest/debug"/>
+      <include name="build/generated/res/rs/androidTest/debug"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.mybasecustomwidget" depends="compile.module.mybasecustomwidget.production,compile.module.mybasecustomwidget.tests" description="Compile module myBaseCustomWidget"/>
+  
+  <target name="compile.module.mybasecustomwidget.production" depends="register.custom.compilers" description="Compile module myBaseCustomWidget; production classes">
+    <mkdir dir="${mybasecustomwidget.output.dir}"/>
+    <javac2 destdir="${mybasecustomwidget.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.mybasecustomwidget}/javac">
+      <compilerarg line="${compiler.args.mybasecustomwidget}"/>
+      <bootclasspath refid="mybasecustomwidget.module.bootclasspath"/>
+      <classpath refid="mybasecustomwidget.module.production.classpath"/>
+      <src refid="mybasecustomwidget.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.mybasecustomwidget"/>
+    </javac2>
+    
+    <copy todir="${mybasecustomwidget.output.dir}">
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/r/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/aidl/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/buildConfig/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/res/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/src/main/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.mybasecustomwidget.tests" depends="register.custom.compilers,compile.module.mybasecustomwidget.production" description="compile module myBaseCustomWidget; test classes" unless="skip.tests">
+    <mkdir dir="${mybasecustomwidget.testoutput.dir}"/>
+    <javac2 destdir="${mybasecustomwidget.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.mybasecustomwidget}/javac">
+      <compilerarg line="${compiler.args.mybasecustomwidget}"/>
+      <bootclasspath refid="mybasecustomwidget.module.bootclasspath"/>
+      <classpath refid="mybasecustomwidget.module.classpath"/>
+      <src refid="mybasecustomwidget.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.mybasecustomwidget"/>
+    </javac2>
+    
+    <copy todir="${mybasecustomwidget.testoutput.dir}">
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/r/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/aidl/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/buildConfig/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/source/rs/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.mybasecustomwidget.basedir}/build/generated/res/rs/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.mybasecustomwidget" description="cleanup module">
+    <delete dir="${mybasecustomwidget.output.dir}"/>
+    <delete dir="${mybasecustomwidget.testoutput.dir}"/>
+  </target>
+</project>
